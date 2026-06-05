@@ -1,0 +1,10 @@
+All Users
+
+<% @users.each do |user| %>
+  
+    <%= user.name %>
+    Email: <%= user.email %>
+    <%= link_to "View Profile", user_path(user) %>
+  
+  
+<% end %>
